@@ -1,0 +1,121 @@
+{
+    "langCode":"AZ",
+    "langName": "Azərbaycanca",
+    "splash":{
+        "buttonText": "Başla",
+        "aboutTextOne" : "Cibinizdəki",
+        "aboutTextTwo" : "online",
+        "aboutTextThree":  "kinoteatr"
+    },
+    "validators":{
+        "emailEmpty": "Email yazmaq mütləqdir",
+        "emailWrong": "Email düzgün yazılmayıb",
+        "passEmpty": "Şifrə yazmaq mütləqdir",
+        "passWrong": "Şifrə ən azı 6 simvol olmalıdır",
+        "passSpace" : "Şifrədə boşluq simvolu ola bilməz",
+        "nameEmpty": "Ad yazmaq mütləqdir",
+        "nameSpace": "Ad boşluq simvolu ilə başlaya bilməz"
+    },
+    "authErrors":{
+        "errorLogin": "Email və ya şifrə düzgün deyil",
+        "errorSignUp": "Email və ya şifrə düzgün deyil"
+    },
+    "auth": {
+        "logIn": "Daxil ol",
+        "register": "Qeydiyyat",
+        "nameHint": "Adınız",
+        "emailHint":"Email",
+        "passwordHint":"Şifrə",
+        "bioHint": "Özünüz haqqında birşeylər yazın.",
+        "bioMax": "Maksimum simvol sayı / 120",
+        "continueButton":"Davam et",
+        "dontHaveAccount": "Hesabın yoxdur?",
+        "signUpHere": "Qeydiyyatdan keç",
+        "orText": "və ya",
+        "continueWithG":"Google ilə daxil ol",
+        "continueWithF":"Facebook ilə daxil ol"
+    },
+
+    "editProfile": {
+        "account": "Hesab",
+        "logout" : "Çıxış",
+        "settings": "Parametrlər",
+        "save" : "Yadda saxla",
+        "edit": "Düzəliş Et",
+        "language": "Dil",
+        "darkMode": "Qaranlıq Rejim",
+        "notifications": "Bildirişlər",
+        "pinCode": "Pin-Kod",
+        "messages": "Mesajlar",
+        "friends": "Dostlar",
+        "chooseInterests": "Maraqları seç",
+        "likedMovies": "Bəyənilən Filmlər",
+        "watchLater": "Daha Sonra Izlə",
+        "watchHistory": "İzləmə keçmişi"
+    },
+
+    "genresMovies": {
+        "Liked": "Bəyəndiyim Filmlər",
+        "Action": "Hərəkətli Filmlər",
+        "Adventure": "Macəra Filmləri",
+        "Animation": "Animasiya Filmləri",
+        "Comedy" : "Komediya Filmləri",
+        "Crime": "Cinayət Filmləri",
+        "Documentary": "Sənədli Filmlər",
+        "Drama": "Dram Filmləri",
+        "Family": "Ailə Filmləri",
+        "Fantasy": "Fantastik Filmlər",
+        "History": "Tarixi Filmlər",
+        "Horror": "Qorxu Filmləri",
+        "Music": "Musiqili Filmlər",
+        "Mystery": "Sirrli Filmlər",
+        "Romance": "Romantik Filmlər",
+        "SciFi": "Elmi Fantaziya Filmləri",
+        "TVMovie": "TV Filmləri",
+        "Thriller": "Triller Filmləri",
+        "War": "Müharibə Filmləri",
+        "Western": "Qərb Filmləri",
+        "Popular" : "Populyar Filmlər",
+        "TopRated": "Reytinqli Filmlər",
+        "Upcoming": "Gələcək Filmlər",
+        "NowPlaying": "Seçilmiş Filmlər"
+    },
+
+    "genreNames": {
+        "Action": "Hərəkətli",
+        "Adventure": "Macəra",
+        "Animation": "Animasiya",
+        "Comedy" : "Komediya",
+        "Crime": "Cinayət",
+        "Documentary": "Sənədli",
+        "Drama": "Dram",
+        "Family": "Ailə",
+        "Fantasy": "Fantastik",
+        "History": "Tarixi",
+        "Horror": "Qorxu",
+        "Music": "Musiqili",
+        "Mystery": "Sirrli",
+        "Romance": "Romantik",
+        "SciFi": "Elmi Fantaziya",
+        "TVMovie": "TV",
+        "Thriller": "Triller",
+        "War": "Müharibə",
+        "Western": "Qərb",
+        "Popular" : "Populyar",
+        "TopRated": "Reytinqli",
+        "Upcoming": "Gələcək",
+        "NowPlaying": "Seçilmiş"
+    },
+    "homeScreen": {
+        "search": "Axtar",
+        "notFound": "Heç bir film tapılmadı"
+    },
+    "movieScreen": {
+        "storyLine": "Süjet",
+        "similarMovies": "Oxşar Filmlər",
+        "cast": "Aktyorlar",
+        "like": "Bəyən",
+        "addToList": "Sonra izlə",
+        "share": "Paylaş"
+    }
+}

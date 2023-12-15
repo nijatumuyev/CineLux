@@ -1,0 +1,121 @@
+{
+    "langCode":"EN",
+    "langName": "English",
+    "splash":{
+        "buttonText": "Get started",
+        "aboutTextOne" : "Online cinema",
+        "aboutTextTwo" : "in your",
+        "aboutTextThree":  "pocket"
+    },
+    "validators":{
+        "emailEmpty": "Email can't be emty",
+        "emailWrong": "Email is invalid",
+        "passEmpty": "Password can't be emty",
+        "passWrong": "Password must be at least 6 characters",
+        "passSpace" : "Password can't contain space characters",
+        "nameEmpty": "Name can't be empty",
+        "nameSpace": "Name can't start with a space character"
+    },
+    "authErrors":{
+        "errorLogin": "Email or password is incorrect",
+        "errorSignUp": "Email or password is incorrect"
+    },
+    "auth": {
+        "logIn": "Log in",
+        "register": "Sign up",
+        "nameHint": "Name",
+        "emailHint":"Email",
+        "passwordHint":"Password",
+        "bioHint": "Type something about yourself.",
+        "bioMax": "Maximum symbols / 120",
+        "continueButton":"Continue",
+        "dontHaveAccount": "Don't have an account?",
+        "signUpHere": "Sign up",
+        "orText": "or",
+        "continueWithG":"Continue with Google",
+        "continueWithF":"Continue with Facebook"
+    },
+
+    "editProfile": {
+        "account": "Profile",
+        "logout" : "Logout",
+        "settings" : "Settings",
+        "save" : "Save",
+        "edit": "Edit",
+        "language": "Language",
+        "darkMode": "Dark Mode",
+        "notifications": "Notifications",
+        "pinCode": "Pin-Code",
+        "messages": "Messages",
+        "friends": "Friends",
+        "chooseInterests": "Choose Interests",
+        "likedMovies": "Liked Movies",
+        "watchLater": "Watch Later",
+        "watchHistory": "Watch History"
+    },
+
+    "genresMovies": {
+        "Liked": "Liked Movies",
+        "Action": "Action Movies",
+        "Adventure": "Adventure Movies",
+        "Animation": "Animation Movies",
+        "Comedy" : "Comedy Movies",
+        "Crime": "Crime Movies",
+        "Documentary": "Documentary Movies",
+        "Drama": "Drama Movies",
+        "Family": "Family Movies",
+        "Fantasy": "Fantasy Movies",
+        "History": "History Movies",
+        "Horror": "Horror Movies",
+        "Music": "Music Movies",
+        "Mystery": "Mystery Movies",
+        "Romance": "Romance Movies",
+        "SciFi": "Science-Fiction Movies",
+        "TVMovie": "TV Movies",
+        "Thriller": "Thriller Movies",
+        "War": "War Movies",
+        "Western": "Western Movies",
+        "Popular" : "Popular Movies",
+        "TopRated": "Top-Rated Movies",
+        "Upcoming": "Upcoming Movies",
+        "NowPlaying": "Now Playing Movies"
+    },
+
+    "genreNames": {
+        "Action": "Action",
+        "Adventure": "Adventure",
+        "Animation": "Animation",
+        "Comedy" : "Comedy",
+        "Crime": "Crime",
+        "Documentary": "Documentary",
+        "Drama": "Drama",
+        "Family": "Family",
+        "Fantasy": "Fantasy",
+        "History": "History",
+        "Horror": "Horror",
+        "Music": "Music",
+        "Mystery": "Mystery",
+        "Romance": "Romance",
+        "SciFi": "SciFi",
+        "TVMovie": "TV",
+        "Thriller": "Thriller",
+        "War": "War",
+        "Western": "Western",
+        "Popular" : "Popular",
+        "TopRated": "Top Rated",
+        "Upcoming": "Upcoming",
+        "NowPlaying": "Now Playing"
+    },
+    "homeScreen": {
+        "search": "Search",
+        "notFound" : "No movies found"
+    },
+    "movieScreen": {
+        "storyLine": "Storyline",
+        "similarMovies": "Similar Movies",
+        "cast": "Cast",
+        "like": "Like",
+        "addToList": "Watch later",
+        "share": "Share"
+    }
+}

@@ -1,0 +1,119 @@
+{
+    "langCode":"RU",
+    "langName": "Русский",
+    "splash":{
+        "buttonText": "Начать",
+        "aboutTextOne" : "Онлайн-кинотеатр",
+        "aboutTextTwo" : "у вас",
+        "aboutTextThree":  "в кармане"
+    },
+    "validators":{
+        "emailEmpty": "Эл. почта не должна быть пустой",
+        "emailWrong": "Эл. почта недействительна",
+        "passEmpty": "Пароль не должен быть пустым",
+        "passWrong": "Пароль должен содержать не менее 6 символов",
+        "passSpace" : "Пароль не может содержать пробел",
+        "nameEmpty": "Имя не должно быть пустым",
+        "nameSpace": "Имя не может начинаться с символа пробел"
+    },
+    "authErrors":{
+        "errorLogin": "Email или пароль указан неверно",
+        "errorSignUp": "Email или пароль указан неверно"
+    },
+    "auth": {
+        "logIn": "Войти",
+        "register": "Регистрация",
+        "nameHint": "Имя",
+        "emailHint":"Электронная почта",
+        "passwordHint":"Пароль",
+        "bioHint": "Напишите что-нибудь о себе.",
+        "bioMax": "Максимальное число символов / 120",
+        "continueButton":"Продолжить",
+        "orText": "или",
+        "continueWithG":"Продолжить с Google",
+        "continueWithF":"Продолжить с Facebook"
+    },
+
+    "editProfile": {
+        "account": "Аккаунт",
+        "logout" : "Выйти",
+        "settings" : "Настройки",
+        "save" : "Сохранить",
+        "edit": "Изменить",
+        "language": "Язык",
+        "darkMode": "Тёмный Режим",
+        "notifications": "Уведомления",
+        "pinCode": "Пин-код",
+        "messages": "Сообщения",
+        "friends": "Друзья",
+        "chooseInterests": "Выберите Интересы",
+        "likedMovies": "Любимые фильмы",
+        "watchLater": "Посмотреть Позже",
+        "watchHistory": "История Просмотра"
+    },
+
+    "genresMovies": {
+        "Liked": "Любимые Фильмы",
+        "Action": "Боевик Фильмы",
+        "Adventure": "Приключенческие Фильмы",
+        "Animation": "Анимационные Фильмы",
+        "Comedy" : "Комедийные Фильмы",
+        "Crime": "Криминальные Фильмы",
+        "Documentary": "Документальные Фильмы",
+        "Drama": "Драматические Фильмы",
+        "Family": "Семейные Фильмы",
+        "Fantasy": "Фантастические Фильмы",
+        "History": "Исторические Фильмы",
+        "Horror": "Ужас Фильмы",
+        "Music": "Музыкальные Фильмы",
+        "Mystery": "Мистические Фильмы",
+        "Romance": "Романтические Фильмы",
+        "SciFi": "Научные Фильмы",
+        "TVMovie": "ТВ Фильмы",
+        "Thriller": "Триллер Фильмы",
+        "War": "Военные Фильмы",
+        "Western": "Вестерн Фильмы",
+        "Popular" : "Популярные Фильмы",
+        "TopRated": "Топ Лучших Фильмов",
+        "Upcoming": "Предстоящие Фильмы",
+        "NowPlaying": "Избранные Фильмы"
+    },
+
+    "genreNames": {
+        "Action": "Боевик",
+        "Adventure": "Приключение",
+        "Animation": "Анимация",
+        "Comedy" : "Комедия",
+        "Crime": "Криминал",
+        "Documentary": "Документальный",
+        "Drama": "Драма",
+        "Family": "Семейный",
+        "Fantasy": "Фантастика",
+        "History": "Исторический",
+        "Horror": "Ужас",
+        "Music": "Музыкальный",
+        "Mystery": "Мистика",
+        "Romance": "Романтика",
+        "SciFi": "Научный",
+        "TVMovie": "ТВ",
+        "Thriller": "Триллер",
+        "War": "Военный",
+        "Western": "Вестерн",
+        "Popular" : "Популярный",
+        "TopRated": "Топ-10",
+        "Upcoming": "Предстоящий",
+        "NowPlaying": "Избранный"
+    },
+    "homeScreen": {
+        "search": "Поиск",
+        "notFound" : "Фильмы не найдены"
+    },
+    "movieScreen": {
+        "storyLine": "Сюжет",
+        "similarMovies": "Похожие Фильмы",
+        "cast": "В Ролях",
+        "like": "Нравится",
+        "addToList": "Смотреть позже",
+        "share": "Поделиться"
+    }
+}

@@ -1,0 +1,121 @@
+{
+    "langCode":"TR",
+    "langName": "Türkçe",
+    "splash":{
+        "buttonText": "Başlarken",
+        "aboutTextOne" : "Cebinizdeki",
+        "aboutTextTwo" : "online",
+        "aboutTextThree":  "sinema"
+    },
+    "validators":{
+        "emailEmpty": "E-posta boş olamaz",
+        "emailWrong": "E-posta yalnış ve ya hatalı",
+        "passEmpty": "Şifre boş olamaz",
+        "passWrong": "Şifre en az 6 karakter uzunluğunda olmalıdır",
+        "passSpace" : "Şifrede boşluk işareti kullanılamaz",
+        "nameEmpty": "İsim boş olamaz",
+        "nameSpace": "İsim boşluk işaretiyle başlayamaz"
+    },
+    "authErrors":{
+        "errorLogin": "Hatalı e-posta ve ya şifre",
+        "errorSignUp": "Hatalı e-posta ve ya şifre"
+    },
+    "auth": {
+        "logIn": "Giriş",
+        "register": "Kayıt ol",
+        "nameHint": "İsim",
+        "emailHint":"E-posta",
+        "passwordHint":"Şifre",
+        "bioHint": "Kendiniz hakkında birşeyler yazın.",
+        "bioMax": "Maksimal karakter sayısı / 120",
+        "continueButton":"Devam",
+        "dontHaveAccount": "Hesabın yok mu?",
+        "signUpHere": "Kayıt ol",
+        "orText": "ve ya",
+        "continueWithG":"Google ile devam et",
+        "continueWithF":"Facebook ile devam et"
+    },
+
+    "editProfile": {
+        "account": "Hesap",
+        "logout" : "Çıkış",
+        "settings": "Ayarlar",
+        "save" : "Kaydet",
+        "edit": "Düzenle",
+        "language": "Dil",
+        "darkMode": "Karanlık Mod",
+        "notifications": "Bildirimler",
+        "pinCode": "Pin-Kod",
+        "messages": "Mesajlar",
+        "friends": "Arkadaşlar",
+        "chooseInterests": "İlgi Alanlarını Seç",
+        "likedMovies": "Beğendiğim Filmler",
+        "watchLater": "Daha Sonra İzle",
+        "watchHistory": "İzleme Geçmişi"
+    },
+
+    "genresMovies": {
+        "Liked": "Beğendiğim Filmler",
+        "Action": "Aksiyon Filmleri",
+        "Adventure": "Macera Filmleri",
+        "Animation": "Animasyon Filmleri",
+        "Comedy" : "Komedi Filmleri",
+        "Crime": "Suç Filmleri",
+        "Documentary": "Belgesel Filmleri",
+        "Drama": "Dram Filmleri",
+        "Family": "Aile Filmleri",
+        "Fantasy": "Fantastik Filmler",
+        "History": "Tarih Filmleri",
+        "Horror": "Korku Filmleri",
+        "Music": "Müzikal Filmleri",
+        "Mystery": "Gizem Filmleri",
+        "Romance": "Romantik Filmler",
+        "SciFi": "Bilim-Kurgu Filmleri",
+        "TVMovie": "TV Filmleri",
+        "Thriller": "Gerilim Filmleri",
+        "War": "Savaş Filmleri",
+        "Western": "Kovboy Filmleri",
+        "Popular" : "Popüler Filmler",
+        "TopRated": "Beğenilen Filmler",
+        "Upcoming": "Gelecek Filmler",
+        "NowPlaying": "Seçilmiş Filmler"
+    },
+
+    "genreNames": {
+        "Action": "Aksiyon",
+        "Adventure": "Macera",
+        "Animation": "Animasyon",
+        "Comedy" : "Komedi",
+        "Crime": "Suç",
+        "Documentary": "Belgesel",
+        "Drama": "Dram",
+        "Family": "Aile",
+        "Fantasy": "Fantastik",
+        "History": "Tarih",
+        "Horror": "Korku",
+        "Music": "Müzikal",
+        "Mystery": "Gizem",
+        "Romance": "Romantik",
+        "SciFi": "Bilim-Kurgu",
+        "TVMovie": "TV",
+        "Thriller": "Gerilim",
+        "War": "Savaş",
+        "Western": "Kovboy",
+        "Popular" : "Popüler",
+        "TopRated": "Beğenilen",
+        "Upcoming": "Gelecek",
+        "NowPlaying": "Seçilmiş"
+    },
+    "homeScreen": {
+        "search": "Arama",
+        "notFound" : "Hiçbir film bulunamadı"
+    },
+    "movieScreen": {
+        "storyLine": "Açıklama",
+        "similarMovies": "Benzer Filmler",
+        "cast": "Oyuncular",
+        "like": "Beğen",
+        "addToList": "Sonra izle",
+        "share": "Paylaş"
+    }
+}
