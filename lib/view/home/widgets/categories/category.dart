@@ -43,8 +43,8 @@ class _CategoryWidgetState extends ConsumerState<CategoryWidget> {
                         fontWeight: FontWeight.w500),
                   ),
                   IconButton(
-                    onPressed: () async {
-                      await genreClear(
+                    onPressed: () {
+                      genreClear(
                         widget.genre!,
                         ref,
                       );
@@ -176,7 +176,7 @@ class _CategoryWidgetState extends ConsumerState<CategoryWidget> {
                           ),
                           Padding(
                             padding: EdgeInsets.only(
-                              left: 4.w,
+                              left: 0.w,
                               right: 4.w,
                               top: 4.h,
                             ),

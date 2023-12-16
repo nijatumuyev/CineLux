@@ -46,8 +46,8 @@ class BottomNavBar extends ConsumerWidget {
             ),
           ),
           InkWell(
-            onTap: () async {
-              await genreClear(
+            onTap: () {
+              genreClear(
                 LocaleKeys.genresMovies_Liked.locale(),
                 ref,
               );
@@ -61,8 +61,8 @@ class BottomNavBar extends ConsumerWidget {
             ),
           ),
           InkWell(
-            onTap: () async {
-              await genreClear(
+            onTap: () {
+              genreClear(
                 LocaleKeys.genresMovies_NowPlaying.locale(),
                 ref,
               );

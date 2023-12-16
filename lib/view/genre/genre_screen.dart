@@ -27,7 +27,6 @@ class _GenreScreenState extends ConsumerState<GenreScreen> {
   @override
   Widget build(BuildContext context) {
     final paginationState = genreDetectorWatch(widget.genre!, ref);
-
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 12, 32, 43),
       appBar: AppBar(

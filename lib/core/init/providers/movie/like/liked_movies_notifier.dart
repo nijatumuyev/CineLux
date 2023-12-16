@@ -15,50 +15,38 @@ class LikeMovieServiceNotifier extends StateNotifier<Pagination> {
     getMovies();
   }
 
-  CollectionReference<Movie> getCollection() {
-    final collection = FirebaseFirestore.instance
-        .collection('users')
-        .doc(FirebaseAuth.instance.currentUser!.uid)
-        .collection("likedMovies")
-        .withConverter(fromFirestore: (snapshot, _) {
-      return Movie.fromJson(
-        snapshot.data()!,
-      );
-    }, toFirestore: (model, _) {
-      return model.toJson();
-    });
-    return collection;
-  }
+  final collection = FirebaseFirestore.instance
+      .collection('users')
+      .doc(FirebaseAuth.instance.currentUser!.uid)
+      .collection("likedMovies");
 
   Future<List<Movie>?> fetchMovies([int page = 1]) async {
-    var querySnapshot = await getCollection().get();
-    List<Movie> likedMovies = [];
+    var querySnapshot = await collection.get();
+    List<int> movieIds = [];
     for (var element in querySnapshot.docs) {
-      likedMovies.add(element.data());
+      movieIds.add(int.tryParse(element.id)!);
     }
 
-    for (Movie movie in likedMovies) {
+    List<Movie>? movies = [];
+
+    for (int id in movieIds) {
       final String url =
-          "https://api.themoviedb.org/3/movie/${movie.id}$apiKey&language=$langCode";
+          "https://api.themoviedb.org/3/movie/$id$apiKey&language=$langCode";
       try {
         final res = await Dio().get(url);
         if (res.statusCode == 200) {
           final json = res.data;
-          Movie newMovie = Movie.fromJson(json);
-          getCollection().doc(movie.id.toString()).set(newMovie);
+          if (res.data != null) {
+            Movie movie = Movie.fromJson(json);
+            movies.add(movie);
+          }
         }
       } on MoviesException catch (e) {
         state = state.copyWith(errorMessage: e.message);
       }
     }
 
-    querySnapshot = await getCollection().get();
-    likedMovies = [];
-    for (var element in querySnapshot.docs) {
-      likedMovies.add(element.data());
-    }
-
-    return likedMovies;
+    return movies;
   }
 
   Future<void> getMovies() async {
@@ -88,12 +76,11 @@ class LikeMovieServiceNotifier extends StateNotifier<Pagination> {
   }
 
   Future<void> likeMovie(Movie movie) async {
-    var findMovie =
-        await getCollection().where("id", isEqualTo: movie.id).get();
+    var findMovie = await collection.where("id", isEqualTo: movie.id).get();
     if (findMovie.docs.isEmpty) {
-      return await getCollection().doc(movie.id.toString()).set(movie);
+      return await collection.doc(movie.id.toString()).set({"id": movie.id});
     } else {
-      return await getCollection().doc(movie.id.toString()).delete();
+      return await collection.doc(movie.id.toString()).delete();
     }
   }
 }
