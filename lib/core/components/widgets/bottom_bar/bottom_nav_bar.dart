@@ -1,5 +1,3 @@
-// ignore_for_file: deprecated_member_use
-
 import 'package:cinelux/core/init/extensions/string_extensions.dart';
 import 'package:cinelux/core/init/language/locale_keys.g.dart';
 import 'package:cinelux/view/genre/genre_screen.dart';
@@ -9,7 +7,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
-
 import '../../../../view/profile/profile_screen.dart';
 import '../../../../view/search/search_screen.dart';
 import '../../../init/providers/movie/helpers/genre_clear.dart';
@@ -72,7 +69,8 @@ class BottomNavBar extends ConsumerWidget {
             },
             child: SvgPicture.asset(
               "assets/icons/bottom_bar_icons/dark/foru-dark-unselected.svg",
-              color: const Color(0xfffe0000),
+              colorFilter:
+                  const ColorFilter.mode(Color(0xfffe0000), BlendMode.srcIn),
               width: 40.w,
             ),
           ),

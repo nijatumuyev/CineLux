@@ -9,7 +9,6 @@ import 'package:cinelux/core/init/providers/movie/watch_later/watch_later_notifi
 import 'package:cinelux/view/movie/widgets/cast_widget.dart';
 import 'package:cinelux/view/player/yt_player.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
@@ -30,9 +29,6 @@ class MovieScreen extends ConsumerStatefulWidget {
 class _MovieScreenState extends ConsumerState<MovieScreen> {
   @override
   Widget build(BuildContext context) {
-    SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
-        statusBarColor: Colors.transparent,
-        statusBarBrightness: Brightness.light));
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 12, 32, 43),
       extendBodyBehindAppBar: false,

@@ -1,4 +1,3 @@
-import 'package:cinelux/core/components/widgets/bottom_bar/bottom_nav_bar.dart';
 import 'package:cinelux/core/components/widgets/input/auth_input.dart';
 import 'package:cinelux/core/init/extensions/string_extensions.dart';
 import 'package:cinelux/core/init/providers/providers.dart';
@@ -148,7 +147,6 @@ class ProfileEditScreen extends ConsumerWidget {
           },
         ),
       ),
-      bottomNavigationBar: const BottomNavBar(),
     );
   }
 }

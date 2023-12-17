@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -17,15 +18,16 @@ class YTPlayer extends ConsumerStatefulWidget {
 }
 
 class _YTPlayerState extends ConsumerState<YTPlayer> {
-  // @override
-  // void initState() {
-  //   widget.controller!.addListener(() {
-  //     if (mounted) {
-  //       setState(() {});
-  //     }
-  //   });
-  //   super.initState();
-  // }
+  @override
+  void initState() {
+    SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
+      systemNavigationBarColor: Colors.transparent,
+      statusBarBrightness: Brightness.light,
+      statusBarIconBrightness: Brightness.light,
+      systemStatusBarContrastEnforced: false,
+    ));
+    super.initState();
+  }
 
   @override
   void deactivate() {
@@ -35,6 +37,9 @@ class _YTPlayerState extends ConsumerState<YTPlayer> {
 
   @override
   void dispose() {
+    SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
+      systemNavigationBarColor: Color.fromARGB(255, 12, 32, 48),
+    ));
     widget.controller!.dispose();
     super.dispose();
   }
@@ -49,7 +54,7 @@ class _YTPlayerState extends ConsumerState<YTPlayer> {
           DeviceOrientation.landscapeRight
         ]);
         SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual,
-            overlays: [SystemUiOverlay.bottom, SystemUiOverlay.top]);
+            overlays: [SystemUiOverlay.bottom]);
       },
       onExitFullScreen: () {
         SystemChrome.setPreferredOrientations(
@@ -58,12 +63,7 @@ class _YTPlayerState extends ConsumerState<YTPlayer> {
             overlays: [SystemUiOverlay.bottom, SystemUiOverlay.top]);
       },
       player: YoutubePlayer(
-        thumbnail: Container(
-          color: Colors.black,
-          width: 1.sw,
-          height: 1.sh,
-        ),
-        // thumbnail: CachedNetworkImage(imageUrl: movie.backdropPath!),
+        thumbnail: CachedNetworkImage(imageUrl: movie.backdropPath!),
         showVideoProgressIndicator: true,
         progressColors: ProgressBarColors(
             bufferedColor: Colors.grey.shade700,
@@ -73,27 +73,7 @@ class _YTPlayerState extends ConsumerState<YTPlayer> {
         actionsPadding: EdgeInsets.only(top: 20.h),
         topActions: [
           const SizedBox(
-            width: 10,
-          ),
-          IconButton(
-            onPressed: () {
-              SystemChrome.setPreferredOrientations([
-                DeviceOrientation.portraitUp,
-                DeviceOrientation.portraitDown
-              ]);
-              SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual,
-                  overlays: [SystemUiOverlay.bottom, SystemUiOverlay.top]);
-              widget.controller!.pause();
-              Get.back();
-            },
-            iconSize: 30.r,
-            icon: const Icon(
-              Icons.arrow_back_ios,
-              color: Colors.white,
-            ),
-          ),
-          const SizedBox(
-            width: 0,
+            width: 20,
           ),
           Expanded(
             child: Text(
@@ -102,7 +82,7 @@ class _YTPlayerState extends ConsumerState<YTPlayer> {
               overflow: TextOverflow.ellipsis,
               style: const TextStyle(
                   color: Colors.white,
-                  fontSize: 22,
+                  fontSize: 18,
                   fontWeight: FontWeight.w400),
             ),
           )
@@ -112,6 +92,9 @@ class _YTPlayerState extends ConsumerState<YTPlayer> {
               [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
           SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual,
               overlays: [SystemUiOverlay.bottom, SystemUiOverlay.top]);
+          SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
+            systemNavigationBarColor: Color.fromARGB(255, 12, 32, 48),
+          ));
           Get.back();
         },
       ),

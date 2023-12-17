@@ -5,7 +5,6 @@ import 'package:cinelux/core/components/widgets/bottom_bar/bottom_nav_bar.dart';
 import 'package:cinelux/core/init/providers/movie/helpers/genre_clear.dart';
 import 'package:cinelux/view/movie/movie_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
@@ -31,10 +30,6 @@ class _GenreScreenState extends ConsumerState<GenreScreen> {
       backgroundColor: const Color.fromARGB(255, 12, 32, 43),
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(255, 12, 32, 48),
-        systemOverlayStyle: const SystemUiOverlayStyle(
-          statusBarColor: Color.fromARGB(255, 12, 32, 48),
-          systemNavigationBarColor: Color.fromARGB(255, 12, 32, 48),
-        ),
         centerTitle: true,
         automaticallyImplyLeading: true,
         title: Text(
@@ -168,16 +163,59 @@ class _MovieBox extends StatelessWidget {
                 ),
               ),
               Positioned(
-                bottom: 4.r,
-                left: 4.r,
-                right: 4.r,
-                child: _FrontBanner(text: movie!.title!),
+                bottom: 0,
+                left: 0,
+                right: 0,
+                child: Container(
+                  alignment: Alignment.bottomCenter,
+                  width: double.infinity,
+                  height: 120.h,
+                  padding: EdgeInsets.symmetric(horizontal: 6.w, vertical: 4.h),
+                  decoration: BoxDecoration(
+                    border: Border(
+                      bottom:
+                          BorderSide(color: Colors.grey.shade700, width: 3.r),
+                      left: BorderSide(color: Colors.grey.shade700, width: 3.r),
+                      right:
+                          BorderSide(color: Colors.grey.shade700, width: 3.r),
+                    ),
+                    gradient: LinearGradient(
+                        begin: Alignment.topCenter,
+                        end: Alignment.bottomCenter,
+                        colors: [
+                          Colors.transparent,
+                          Colors.black.withOpacity(0.1),
+                          Colors.black.withOpacity(0.2),
+                          Colors.black.withOpacity(0.3),
+                          Colors.black.withOpacity(0.4),
+                          Colors.black.withOpacity(0.5),
+                          Colors.black.withOpacity(0.6),
+                          Colors.black.withOpacity(0.7),
+                          Colors.black.withOpacity(0.8),
+                          Colors.black.withOpacity(0.9),
+                          Colors.black.withOpacity(0.9),
+                          Colors.black,
+                          Colors.black,
+                          Colors.black,
+                        ]),
+                  ),
+                  child: Text(
+                    movie!.title!,
+                    maxLines: 5,
+                    overflow: TextOverflow.ellipsis,
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.w500,
+                        fontSize: 17.sp),
+                  ),
+                ),
               ),
             ],
           ),
         ),
         Container(
-          padding: EdgeInsets.symmetric(vertical: 4.h, horizontal: 4.w),
+          padding: EdgeInsets.symmetric(vertical: 4.h, horizontal: 0.w),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,

@@ -1,8 +1,5 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
-
 import 'package:cinelux/core/init/extensions/string_extensions.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
@@ -17,8 +14,8 @@ class ProfileScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 12, 32, 43),
+    return const Scaffold(
+      backgroundColor: Color.fromARGB(255, 12, 32, 43),
       appBar: _AppBar(),
       body: SingleChildScrollView(
         child: Column(
@@ -40,10 +37,6 @@ class _AppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      systemOverlayStyle: const SystemUiOverlayStyle(
-        statusBarColor: Color.fromARGB(255, 12, 32, 48),
-        systemNavigationBarColor: Color.fromARGB(255, 12, 32, 48),
-      ),
       backgroundColor: const Color.fromARGB(255, 12, 32, 48),
       automaticallyImplyLeading: true,
       centerTitle: true,

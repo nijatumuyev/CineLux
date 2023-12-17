@@ -6,7 +6,6 @@ import 'package:cinelux/view/profile/profile_screen.dart';
 import 'package:cinelux/view/search/search_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
@@ -22,10 +21,6 @@ class HomeScreen extends ConsumerWidget {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 12, 32, 43),
       appBar: AppBar(
-        systemOverlayStyle: const SystemUiOverlayStyle(
-          statusBarColor: Color.fromARGB(255, 12, 32, 48),
-          systemNavigationBarColor: Color.fromARGB(255, 12, 32, 48),
-        ),
         automaticallyImplyLeading: false,
         backgroundColor: const Color.fromARGB(255, 12, 32, 48),
         centerTitle: true,

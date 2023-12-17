@@ -1,6 +1,5 @@
 import 'package:cinelux/core/components/widgets/bottom_bar/bottom_nav_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -18,10 +17,6 @@ class _LikedMoviesScreenState extends ConsumerState<LikedMoviesScreen> {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 12, 32, 43),
       appBar: AppBar(
-        systemOverlayStyle: const SystemUiOverlayStyle(
-          statusBarColor: Color.fromARGB(255, 12, 32, 48),
-          systemNavigationBarColor: Color.fromARGB(255, 12, 32, 48),
-        ),
         backgroundColor: const Color.fromARGB(255, 12, 32, 48),
         automaticallyImplyLeading: true,
         centerTitle: true,
